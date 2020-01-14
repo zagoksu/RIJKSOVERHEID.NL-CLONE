@@ -502,7 +502,18 @@
   #navBar .container:hover .navSide {
     display: flex;  
     order: 3;
+    
   }
+
+  #navBar .container:hover .navSide li{
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 220px;
+    padding-right: 200px;
+  
+  
+  }
+
   
   
    .searchForm {
