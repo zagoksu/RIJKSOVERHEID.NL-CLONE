@@ -9,7 +9,7 @@
     font-family:"RO Sans", Calibri, sans-serif;
   }
 
-  h2:hover, h3:hover, .topTaskNavigation li:hover{
+  h2:hover, h3:hover, .topTaskNavigation li:hover, .links li:hover{
     text-decoration: underline;
   }
   
