@@ -10,6 +10,11 @@
   }
   
   
+.logo .container{
+  margin-left: 25%;
+}
+
+
   #maincontainer {
     background-color: #ffffff;
     text-align: center;
@@ -451,6 +456,16 @@
          
      margin-left: 10px;
        
+  }
+
+  .logo .container{
+
+    margin-left: 40%;
+  }
+
+  .logo .container img{
+    width: 250px;
+    height: 90px;
   }
   
     #navBar .container {
