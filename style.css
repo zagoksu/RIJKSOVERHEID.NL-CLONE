@@ -8,6 +8,10 @@
     font-size: 20px;
     font-family:"RO Sans", Calibri, sans-serif;
   }
+
+  h2:hover, h3:hover, .topTaskNavigation li:hover{
+    text-decoration: underline;
+  }
   
   
 .logo .container{
