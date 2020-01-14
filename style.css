@@ -1,0 +1,779 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 20px;
+    font-family:"RO Sans", Calibri, sans-serif;
+  }
+  
+  
+  #maincontainer {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  #navBar .container {
+    background-color: #01689b;
+    color: #ffffff;
+    border: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #navBar .container .navHome{
+    align-items:center;
+    font-size:1.2rem;
+    line-height:1.2em;
+    text-decoration:none;
+    margin: auto;
+    margin-left: 50px;
+    line-height:1.4rem
+  }
+  
+  
+  #navBar .container #navMenu {
+    list-style-type: none;
+  }
+  
+  #navBar .container ul li {
+    padding-right: 20px;
+  
+  }
+  
+  #navBar .container .navHome a{
+    text-decoration:none;
+    color:#fff
+  }
+  
+  #navBar .container .navHome a:hover{
+    text-decoration:underline
+  }
+  #navBar .container .navHome a:focus{
+    outline:2px dotted #fff;
+   
+  }
+  
+  #navBar a.icon {
+  display: none;
+  }
+  
+  .navSide ul{
+    
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    
+  }
+  
+  .navSide ul li{
+    width:auto;
+    padding:0 10px 0 10px;
+    
+  }
+  
+  .navSide ul li a{
+    color:#fff;
+    text-decoration:none;
+    padding:15px 5px 15px 5px;
+    border:0;
+    font-size:1rem;
+    padding:10px 5px 10px 5px
+  
+    }
+  
+  .navSide ul li a:hover{
+    text-decoration:underline
+  }
+  
+  .navSide ul li a:focus{
+    outline:2px dotted #fff
+  }
+  
+  
+  
+  .searchForm {
+    position: absolute;
+    width: 25%;
+    top: 40%;
+    right: 10%;
+    z-index: 1;
+   
+  }
+  
+  .searchForm input {
+    width: 83%;
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px;
+    opacity: 0.9;
+  }
+  .searchForm input:focus{
+    outline: 2px dotted #01689b;
+  }
+  
+  .searchForm button {
+    width: 15%;
+    padding: 10px;
+    margin-left: 0px;
+    border: 1px black;
+    background: black;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-left: none;
+    
+  }
+  
+  .searchForm button:focus{
+    outline: 2px dotted #ffffff;
+  }
+  
+  
+  .headerTopTask {
+    background-image: url('https://www.rijksoverheid.nl/binaries/large/content/gallery/rijksoverheid/attentie-afbeeldingen/home/2019/hardlopers-in-actie-in-haarlem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 340px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .topTaskNavigation {
+    background-color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    height: auto;
+    min-width: 400px;
+    width: 30%;
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 2%;
+  }
+  
+  .topTaskNavigation ul {
+    list-style-type: none;
+    line-height: 1.4rem;
+  }
+  .topTaskNavigation ul a {
+    text-decoration: none;
+    color: #01689b;
+  }
+  
+  .slide {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    font-size: 0.7rem;
+    color: #ffffff;
+  }
+  
+  
+  
+  
+  
+  .editorial {
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f3;
+  }
+  
+  .fourColumnlist ul {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fourColumnlist ul .content {
+    width: 270px;
+    padding: 1%;
+    height: auto;
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  .fourColumnlist ul {
+    list-style-type: none;
+  }
+  
+  .fourColumnlist ul li {
+    display: inline;
+    text-align: left;
+  }
+  
+  .fourColumnlist ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .navItem h3 {
+    color: #01689b;
+  }
+  
+  .fullWidth {
+    padding-top: 50px;
+    margin: 4%;
+    text-align: left;
+  }
+  
+  .spotLight {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .spotLight a {
+    text-decoration: none;
+  }
+  
+  .spotLight .brick {
+    width: 30%;
+    margin: 20px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .spotLight h3{
+    font-size: 1.5rem;
+    color: #01689b;
+    font-weight: lighter;
+  }
+  
+  .spotLight h3:hover{
+    text-decoration: underline;
+  }
+  
+  .brick-image img {
+    width: 100%;
+    position: relative;
+  }
+  
+  .spotLight .brick-text {
+    margin-top: 2%;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  
+  .nieuws {
+    display: block;
+  }
+  
+  .brickRow .container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brickRow .brick {
+    width: 30%;
+    padding: 2%;
+    margin: auto;
+    justify-content: center;
+  }
+  
+  .brickRow .brick a {
+    text-decoration: none;
+  }
+  
+  
+  .brickRow .brick h3{
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #01689b
+  }
+  
+  .brickRow .brick h3:hover{
+    text-decoration: underline;
+  }
+  
+  .brickRow .brick .Date {
+    font-size: 0.8rem; 
+    font-weight: bold;
+    color: #000000;
+    padding-top: 3%;
+  }
+  
+  .brickRow .brick p {
+    font-size: 0.9rem; 
+    color: #000000;
+    padding-top: 3%;
+  }
+  
+  .banner-container {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .banner {
+    font-size: 3vw;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    width: 31%;
+    height: auto;
+    border: 3px solid #b2d7ee;
+    padding: 10px;
+    margin: 20px;
+    }
+  
+  .banner a {
+    text-decoration: none;
+  }
+  
+  .banneritem1 {
+    font-size: 3vw;
+    font-weight: 600;
+    color:#01689b;
+  }
+  
+  .banneritem2, .banneritem3 {
+    font-size: 3vw;
+    font-weight: 400;
+    color:#000000;
+  }
+  .banneritem4{
+    font-size: 4vw;
+    font-weight: 600;
+    color: #01689b;
+  }
+  
+  .banneritem5{
+  
+    font-size: 2.5vw;
+    font-weight: 300;
+    color: #000000;
+  }
+  
+  .banneritem6{
+    font-size: 3vw;
+    font-weight: 600;
+    color: #A90061}
+  
+  
+  
+  footer .container1 {
+    color: #ffffff;
+    background-color: #01689b;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .about {
+    font-size: 1.3rem;
+    width: 50%;
+    padding: 2%;
+    margin: 20px;
+  }
+  
+  
+  .links {
+    width: 20%;
+    font-size: 0.9rem;
+    padding: 2%;
+    margin: 20px;
+    justify-content: center;
+    line-height: 1.6;
+  }
+  
+  
+  .links ul li {
+    list-style-type: none;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .languages {
+    background-color: #ffffff;
+    width: 100%;
+    line-height: 100px;
+    font-size: 0.9rem;
+    vertical-align: middle;
+  }
+  
+  .languages ul {
+    list-style-type: none;
+  }
+  
+  .languages ul li {
+    display: inline;
+    border: 1px solid #b2d7ee;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .languages ul li a {
+    text-decoration: none;
+    color: #01689b;
+  }
+  
+  #nederlands {
+    border: none;
+    font-weight: bold;
+  }
+  
+  
+  /* -------------------------------------- for mobile   -------- ------------------------------------*/
+  
+  @media only screen and (max-width:650px){
+  
+    #navBar  {
+      
+      max-width: auto;
+      margin: auto;
+      background-color:#01689b;
+      color: white;
+            }
+  
+  #navBar .container .navHome{
+         
+     margin-left: 10px;
+       
+  }
+  
+    #navBar .container {
+      height: auto;
+      min-height: 120px;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    #navBar .container:hover{
+      
+      background-color: #01689b;
+      position: relative; 
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+     
+    }
+  
+   
+  
+    #navMenu{
+          display: flex;
+          flex-direction: column;
+          line-height: 20px;
+          
+    }
+  
+  .navSide{
+       display: none;   
+  }      
+  
+  #navBar .container:hover .navSide {
+    display: flex;  
+    order: 3;
+  }
+  
+  
+   .searchForm {
+    order: 2;
+    margin-right: 0;
+    margin-left: 14%;
+    width: 100%;
+    position: relative;
+   }
+  
+      
+    #navBar a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    #navBar a.icon {
+      background:#01689b;
+      display:inline;
+      position: relative;
+      right: 0;
+      top: 0;
+    } 
+  
+    .topTaskNavigation{
+      width: 90%;
+      height: auto;
+    }
+  
+  .editorial{
+    height: auto;
+  }
+  
+    .fourColumnlist ul {
+      width: 100%;
+      overflow: visible;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    .fourColumnlist ul .content {
+      width: 100%;
+      padding: 2%;
+      height: 50px;
+      margin: 20px;
+      justify-content:left;
+    }
+    
+    .fourColumnlist ul {
+      list-style-type: none;
+    }
+    
+    .fourColumnlist ul li {
+      display: inline;
+      text-align: left;
+    }
+    
+    .fourColumnlist ul li a {
+      text-decoration: none;
+      color: #000000;
+    }
+  
+    
+  .spotLight {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .spotLight .brick {
+    width: 40%;
+    margin: 20px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .brick-image img {
+    max-width: 100%;
+    position: relative;
+  }
+  
+  
+  .brickRow .container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brickRow .brick {
+    width: 45%;
+    padding: 2%;
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  .brickRow .brick a {
+    text-decoration: none;
+  }
+  
+  
+  footer .container1 {
+    color: #ffffff;
+    background-color: #01689b;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2%;
+    margin: 20px;
+  }
+  
+  
+  .links {
+    font-size: 0.9rem;
+    width: 40%;
+    padding: 2%;
+    margin: 20px;
+    justify-content: left;
+    line-height: 1.6;
+  }
+  
+  
+  .banner-container {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .banner {
+    font-size: 5vw;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    width: 50%;
+    height: auto;
+    border: 3px solid #b2d7ee;
+    padding: 10px;
+    margin: 10px;
+    }
+  
+  }
+  
+  
+  /* ------------------------------------ for tablet ------------------------------------*/
+  
+  @media only screen and (min-width: 650px) and (max-width: 1100px) {
+  
+  
+    #navBar .container {
+     
+      display: flex;
+      flex-wrap: wrap;
+      align-items: left;
+        }
+  
+    #navBar .container .navHome{
+         
+          margin-left: 10px;
+   
+        }
+  
+        .navSide{
+          
+          margin-left: 10px;
+  
+        }
+      
+     .navSide ul li{
+       
+        width:auto;
+        padding:0 0px 0 0px;
+        
+      }
+      
+    
+  
+  
+  
+    .searchForm {
+      position: absolute;
+      width: 37%;
+      top: 45%;
+      right: 4%;
+     
+    }
+  
+  .spotLight {
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .spotLight .brick {
+    width: 45%;
+    margin: 10px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .brick-image img {
+    max-width: 400px;
+    position: relative;
+  }
+  
+  
+  
+  
+  .brickRow .container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brickRow .brick {
+    width: 45%;
+    padding: 2%;
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  .brickRow .brick a {
+    text-decoration: none;
+  }
+   
+  footer .container1 {
+    color: #ffffff;
+    background-color: #01689b;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2%;
+    margin: 20px;
+  }
+  
+  
+  .links {
+    font-size: 0.9rem;
+    width: 40%;
+    padding: 2%;
+    margin: 20px;
+    justify-content: left;
+    line-height: 1.6;
+  }
+  
+  
+  .banner-container {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .banner {
+    font-size: 3vw;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    width: 50%;
+    height: auto;
+    border: 3px solid #b2d7ee;
+    padding: 10px;
+    margin: 30px;
+    }
+  
+  
+  }
